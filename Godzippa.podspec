@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
                  tag: s.version }
   s.source_files = 'Sources/*.{h,m}'
   s.requires_arc = true
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
 
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
